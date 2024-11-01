@@ -1,3 +1,3 @@
-# Unreal Engine - Modular Game Features
+# Unreal Engine - Modular Gameplay Features
 
-This is a sample project made to test and showcase how Modular Game features work in Unreal Engine 5.4.
+This is a sample project made to test and showcase how Modular Gameplay features work in Unreal Engine 5.4.
