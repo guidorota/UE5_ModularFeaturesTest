@@ -13,9 +13,9 @@ void AModularPawn::BeginPlay()
 {
 
 	/*
-	 * As indicated in the UE documentation, "All extensible games are expected to send this event at the appropriate actor-specific point, as plugins may be listening for it.".
+	 * As indicated in the UE documentation, "All extensible games are expected to send this event at the appropriate actor-specific point, as plugins may be listening for it."
 	 *
-	 * `UGameFeatureAction`s rely on this event to perform their operation.
+	 * `UGameFeatureAction`s rely on this event to perform their operation. Custom events can also be used (see Lyra's `NAME_BindInputsNow`).
 	 */
 	UGameFrameworkComponentManager::SendGameFrameworkComponentExtensionEvent(this, UGameFrameworkComponentManager::NAME_GameActorReady);
 	

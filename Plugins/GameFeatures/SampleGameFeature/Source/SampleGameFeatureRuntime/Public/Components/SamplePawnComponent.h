@@ -6,6 +6,9 @@
 
 class UStaticMesh;
 
+/*
+ * Sample PawnComponent that simply adds a static mesh to the owning Actor.
+ */
 UCLASS()
 class SAMPLEGAMEFEATURERUNTIME_API USamplePawnComponent : public UPawnComponent
 {

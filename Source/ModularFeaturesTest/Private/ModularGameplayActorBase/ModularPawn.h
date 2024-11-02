@@ -4,6 +4,9 @@
 #include "GameFramework/Pawn.h"
 #include "ModularPawn.generated.h"
 
+/*
+ * Base class that automatically registers this Actor as a UGameFrameworkComponentManager receiver.
+ */
 UCLASS()
 class AModularPawn : public APawn
 {

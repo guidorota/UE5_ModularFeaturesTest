@@ -25,6 +25,11 @@ struct FGameFeatureNiagaraSystemEntry
 	TObjectPtr<UNiagaraSystem> NiagaraSystem;
 };
 
+/*
+ * A simple GameFeatureAction that adds a Niagara System.
+ *
+ * This class showcases how to create a custom GameFeatureAction.
+ */
 UCLASS(meta = (DisplayName = "Add Niagara System"))
 class UGameFeatureAction_AddNiagara final : public UGameFeatureAction
 {

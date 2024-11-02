@@ -13,6 +13,9 @@
 
 #define LOCTEXT_NAMESPACE "GameFeatures"
 
+/*
+ * Here we register a GameInstance delegate so that we can add to all new Worlds, and we add to any existing World.
+ */
 void UGameFeatureAction_AddNiagara::OnGameFeatureActivating(FGameFeatureActivatingContext& Context)
 {
 	GameInstanceStartHandles.FindOrAdd(Context) = FWorldDelegates::OnStartGameInstance.AddUObject(
@@ -76,6 +79,9 @@ void UGameFeatureAction_AddNiagara::HandleGameInstanceStart(UGameInstance* GameI
 	}
 }
 
+/*
+ * Get the `UGameFrameworkComponentManager` subsystem and register a delegate to handle actor extension
+ */
 void UGameFeatureAction_AddNiagara::AddToWorld(const FWorldContext& WorldContext,
 	const FGameFeatureStateChangeContext& ChangeContext)
 {
